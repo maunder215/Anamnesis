@@ -2,6 +2,9 @@
 
 A side-scrolling, random-generative dungeon crawler with a hub town. Explore the ever-changing dungeon, battling enemies and uncovering its secrets, while struggling against the dungeon's amnesia-inducing effects. This alpha only features the intro dungeon for now.
 
+## Play here
+
+
 ## Team
 
 * Jecay Chen
@@ -49,3 +52,10 @@ Driven by the promise of wealth and fame, players take on the role of a dungeon 
 
 * Unity game engine (Version 2021.3.33f1)
 * C# programming language
+
+
+## Special Thanks for Assets and Sound Effects
+
+* Unity Free Assets
+* Dustyroom [Link](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116)
+* GWriterStudio [Link](https://assetstore.unity.com/packages/audio/music/8bit-music-062022-225623)

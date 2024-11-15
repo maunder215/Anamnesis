@@ -10,9 +10,12 @@ namespace Platformer.Gameplay
     public class EnemyDeath : Simulation.Event<EnemyDeath>
     {
         public EnemyController enemy;
+        // public TokenInstance token;
 
         public override void Execute()
         {
+            // token = Instantiate(token);
+            // token.transform.position = enemy.transform.position;
             enemy._collider.enabled = false;
             enemy.control.enabled = false;
             if (enemy._audio && enemy.ouch)
