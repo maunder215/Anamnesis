@@ -23,12 +23,21 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => _collider.bounds;
 
+        [Tooltip("Initial health for this enemy")]
+        public int initialHealth = 1;
+
         void Awake()
         {
             control = GetComponent<AnimationController>();
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+
+            var health = GetComponent<Health>();
+            if (health != null)
+            {
+                health.SetHealth(initialHealth);
+            }
         }
 
         void OnCollisionEnter2D(Collision2D collision)

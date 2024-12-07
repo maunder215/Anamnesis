@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Boss
+    uniqueID: 3887999413
+    locked: 0
+  - name: Coins
+    uniqueID: 1684994785
+    locked: 0

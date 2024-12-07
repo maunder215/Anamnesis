@@ -25,6 +25,12 @@ namespace Platformer.Mechanics
         /// <summary>
         /// Increment the HP of the entity.
         /// </summary>
+        public void SetHealth(int value)
+        {
+            maxHP = value;
+            currentHP = value;
+        }
+
         public void Increment()
         {
             currentHP = Mathf.Clamp(currentHP + 1, 0, maxHP);
@@ -37,6 +43,7 @@ namespace Platformer.Mechanics
         public void Decrement()
         {
             currentHP = Mathf.Clamp(currentHP - 1, 0, maxHP);
+            Console.WriteLine(currentHP);
             if (currentHP == 0)
             {
                 var ev = Schedule<HealthIsZero>();

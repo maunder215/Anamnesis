@@ -65,7 +65,7 @@ namespace Platformer.Mechanics
                 }
                 if (jumpState == JumpState.Grounded && Input.GetKeyDown(KeyCode.LeftShift))
                     maxSpeed = 7;
-                else if (Input.GetKeyUp(KeyCode.LeftShift))
+                else if (jumpState == JumpState.Grounded && Input.GetKeyUp(KeyCode.LeftShift))
                 {
                     maxSpeed = 4;
                 }

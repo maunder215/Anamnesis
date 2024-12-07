@@ -967,6 +967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   ouch: {fileID: 8300000, guid: 6c05149e5a2fba64ba172e25a61074b7, type: 3}
+  initialHealth: 2
 --- !u!114 &2928408230266627398
 MonoBehaviour:
   m_ObjectHideFlags: 0
