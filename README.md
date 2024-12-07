@@ -3,7 +3,7 @@
 A side-scrolling, random-generative dungeon crawler with a hub town. Explore the ever-changing dungeon, battling enemies and uncovering its secrets, while struggling against the dungeon's amnesia-inducing effects. This alpha only features the intro dungeon for now.
 
 ## Play here
-
+https://play.unity.com/en/games/62ac36a6-3e31-4857-9c53-8afbb85024a0/anamnesis
 
 ## Team
 * Marcus Underwood
