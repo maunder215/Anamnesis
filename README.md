@@ -6,34 +6,31 @@ A side-scrolling, random-generative dungeon crawler with a hub town. Explore the
 
 
 ## Team
-
-* Jecay Chen
 * Marcus Underwood
 
 ## General Idea
 
-The core gameplay loop involves delving into a procedurally generated dungeon, with a persistent hub town (Anamne) serving as a base for preparation and respite. A tutorial introduces the mechanics within a fixed-layout dungeon.
+The core gameplay loop involves making your way through a dungeon, hoping to make it home to safety.
 
 ## Mechanics
 
 * **Dungeon Delving:** Core gameplay focuses on exploring the dungeon, fighting enemies, and collecting items.
-* **Preparation:** Players use the hub town to prepare for dungeon runs, including selling loot, learning skills, and upgrading equipment.
-* **Amnesia Effect:** The dungeon induces amnesia, causing explorers to forget its layout. Players rely on notes and journals to retrace their steps and learn from past expeditions.
+* **(Planned) Preparation:** Players use the hub town to prepare for dungeon runs, including selling loot, learning skills, and upgrading equipment.
+* **(Planned) Amnesia Effect:** The dungeon induces amnesia, causing explorers to forget its layout. Players rely on notes and journals to retrace their steps and learn from past expeditions.
 
 ## General Controls
 
-* **Movement:** Left/Right (Horizontal), Up (Jump), Down (Fall/Drop through Platform)
-* **Attack:** Basic Melee Attack, Special Magic Attack
+* **Movement:** Left/Right (Horizontal), Up (Jump)
+* **(Planned) Attack:** Basic Melee Attack, Special Magic Attack
 * **Menu:** Pause
-* **Inventory:** Use/Switch Items and Equipment
+* **(Planned) Inventory:** Use/Switch Items and Equipment
 
 ## Dungeon Features
 
-* **Enemies:** Drop items upon defeat.
-* **Procedural Generation:** Dungeon layout changes with each delve.
-* **Lost Records:** Discover old journals and notes from previous explorers, offering clues and hints.
+* **(Planned) Enemies:** Drop items upon defeat.
+* **(Planned) Procedural Generation:** Dungeon layout changes with each delve.
 
-## Town/Hub Features (Anamne)
+## (Planned) Town/Hub Features (Anamne)
 
 * **Shop:** Sell collected items for money.
 * **Training:** Learn and upgrade skills.
@@ -42,7 +39,7 @@ The core gameplay loop involves delving into a procedurally generated dungeon, w
 ## Aesthetic
 
 * **Visuals:** Colorful protagonist against a monochrome dungeon environment.
-* **Sound:** Soundtrack TBD.
+* **Sound:** Upbeat 8bit.
 
 ## Narrative
 
@@ -58,4 +55,5 @@ Driven by the promise of wealth and fame, players take on the role of a dungeon 
 
 * Unity Free Assets
 * Dustyroom [Link](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116)
+* Dungeon Mason [Link](https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-duo-pbr-polyart-157762)
 * GWriterStudio [Link](https://assetstore.unity.com/packages/audio/music/8bit-music-062022-225623)
