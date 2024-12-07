@@ -723,9 +723,10 @@ GameObject:
   - component: {fileID: 2928408230266627419}
   - component: {fileID: 2928408230266627399}
   - component: {fileID: 2928408230266627398}
+  - component: {fileID: -6665793334530408834}
   m_Layer: 0
   m_Name: TurtleShellPBR
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -967,7 +968,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   ouch: {fileID: 8300000, guid: 6c05149e5a2fba64ba172e25a61074b7, type: 3}
-  initialHealth: 2
 --- !u!114 &2928408230266627398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,6 +988,20 @@ MonoBehaviour:
   move: {x: 0, y: 0}
   jump: 0
   stopJump: 0
+--- !u!114 &-6665793334530408834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2929206404579708535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffad43bb006db4856a9c527b89b48db9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 2
+  currentHP: 0
 --- !u!1 &2929218022905458375
 GameObject:
   m_ObjectHideFlags: 0

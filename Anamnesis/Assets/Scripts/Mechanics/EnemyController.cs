@@ -15,6 +15,7 @@ namespace Platformer.Mechanics
         public PatrolPath path;
         public AudioClip ouch;
 
+        // public Health enemyHealth;
         internal PatrolPath.Mover mover;
         internal AnimationController control;
         internal Collider2D _collider;
@@ -23,8 +24,8 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => _collider.bounds;
 
-        [Tooltip("Initial health for this enemy")]
-        public int initialHealth = 1;
+        // [Tooltip("Initial health for this enemy")]
+        // public int initialHealth = 1;
 
         void Awake()
         {
@@ -32,12 +33,13 @@ namespace Platformer.Mechanics
             _collider = GetComponent<Collider2D>();
             _audio = GetComponent<AudioSource>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            // enemyHealth = GetComponent<Health>();
 
-            var health = GetComponent<Health>();
-            if (health != null)
-            {
-                health.SetHealth(initialHealth);
-            }
+            
+            // if (enemyHealth != null)
+            // {
+            //     enemyHealth.SetHealth(initialHealth);
+            // }
         }
 
         void OnCollisionEnter2D(Collision2D collision)
@@ -58,6 +60,7 @@ namespace Platformer.Mechanics
                 if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
                 control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
             }
+
         }
 
     }

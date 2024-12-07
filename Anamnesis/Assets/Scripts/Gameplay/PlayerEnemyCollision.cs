@@ -25,6 +25,7 @@ namespace Platformer.Gameplay
             if (willHurtEnemy)
             {
                 var enemyHealth = enemy.GetComponent<Health>();
+                // var enemyHealth = enemy.enemyHealth;
                 if (enemyHealth != null)
                 {
                     enemyHealth.Decrement();
