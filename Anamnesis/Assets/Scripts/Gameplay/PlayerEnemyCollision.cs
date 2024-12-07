@@ -36,7 +36,7 @@ namespace Platformer.Gameplay
                     }
                     else
                     {
-                        player.Bounce(7);
+                        player.Bounce(4);
                     }
                 }
                 else

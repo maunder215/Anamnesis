@@ -1,5 +1,6 @@
 using Platformer.Core;
 using Platformer.Mechanics;
+using UnityEngine;
 
 namespace Platformer.Gameplay
 {
@@ -18,8 +19,13 @@ namespace Platformer.Gameplay
             // token.transform.position = enemy.transform.position;
             enemy._collider.enabled = false;
             enemy.control.enabled = false;
+            // PlatformerModel model = Simulation.GetModel<PlatformerModel>();
             if (enemy._audio && enemy.ouch)
+            {
                 enemy._audio.PlayOneShot(enemy.ouch);
+            }
+            GameObject respawn = GameObject.FindGameObjectsWithTag("Spawn Point")[0];
+            respawn.transform.position = enemy.transform.position;
         }
     }
 }
