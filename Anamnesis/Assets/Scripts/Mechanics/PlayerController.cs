@@ -29,8 +29,8 @@ namespace Platformer.Mechanics
 
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
-        /*internal new*/ public Collider2D collider2d;
-        /*internal new*/ public AudioSource audioSource;
+        public Collider2D collider2d;
+        public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
 
@@ -62,6 +62,12 @@ namespace Platformer.Mechanics
                 {
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
+                }
+                if (jumpState == JumpState.Grounded && Input.GetKeyDown(KeyCode.LeftShift))
+                    maxSpeed = 7;
+                else if (Input.GetKeyUp(KeyCode.LeftShift))
+                {
+                    maxSpeed = 4;
                 }
             }
             else

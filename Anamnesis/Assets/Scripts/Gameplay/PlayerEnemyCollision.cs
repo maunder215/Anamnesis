@@ -46,6 +46,7 @@ namespace Platformer.Gameplay
             }
             else
             {
+                player.maxSpeed = 4;
                 Schedule<PlayerDeath>();
             }
         }
